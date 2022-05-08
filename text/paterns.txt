@@ -1,0 +1,34 @@
+uvod-woman uvod-man
+uvod-man/start-time 60%start-place start-verb a 60%person-adjective=person1-adjective man=person1-gender named name-man=name 0%he=person1-pronoun 0%him=person1-pronoun-target 0%his=person1-pronoun-owner 30%name-rarity=+.(him=person1-pronoun-target)(his=person1-pronoun-owner)uvod-goal
+uvod-woman/start-time 60%start-place start-verb a 60%person-adjective=person1-adjective woman=person1-gender named name-woman=name 0%she=person1-pronoun 0%her=person1-pronoun-target 0%her=person1-pronoun-owner 30%name-rarity=+.uvod-goal
+uvod-goal/uvod-day he=person1-pronoun decided to obtain goal=destiny.ask-goal goal-helper
+ask-goal/ask-where obtain goal=destiny ask-end he=person1-pronoun asked close 30%person-adjective=person2-adjective person=person2.response-none response-helper-man response-helper-woman
+response-none/person=person2 ignored.ask-goal
+response-helper-man/know a person=person-help named name-man=person-help-name 0%he=person-helper-pronoun 0%him=person-helper-pronoun-target 0%his=person-helper-pronoun-owner answer-end answered 30%person-adjective=person2-adjective person=person2.helper-good helper-bad
+response-helper-woman/know a person=person-help named name-woman=person-help-name 0%she=person-helper-pronoun 0%her=person-helper-pronoun-target 0%her=person-helper-pronoun-owner answer-end answered 30%person-adjective=person2-adjective person=person2.helper-good helper-bad
+helper-bad/name-man=name not-liked name-man=person-help-name because he=person-helper-pronoun reason-hate.(Jakub=person-help-name)helper-simpathetic helper-bad-ending
+helper-good/name-man=name liked name-man=person-help-name because he=person-helper-pronoun reason-like.. helper-entrence
+helper-bad-ending/so name-man=name gave-up and give-up-ending.. the-end
+helper-simpathetic/however name-man=person-help-name was very simpathetic , so name-man=name still went to name-man=person-help-name.. helper-entrence
+goal-helper/he=person1-pronoun was-told 50%by-someone=+ about someone who could-help.helper-intro-man helper-intro-woman
+helper-intro-man/ a person named name-man=person-help-name 0%he=person-helper-pronoun 0%him=person-helper-pronoun-target 0%his=person-helper-pronoun-owner.. helper-entrence
+helper-intro-woman/ a person named name-woman=person-help-name 0%she=person-helper-pronoun 0%her=person-helper-pronoun-target 0%her=person-helper-pronoun-owner.. helper-entrence
+
+helper-entrence/name-man=name stood in-front-of a 60%house-adjective=helper-house-adjective house=helper-house house-details=+.helper-entrence-knock
+helper-entrence-knock/he=person1-pronoun stepped-closer and knocked-on the door of-helper-house=+.helper-greetings
+helper-greetings/name-man=person-help-name opened the door helper-greetings=+.helper-greetings-back
+helper-greetings-back/" I-want goal=destiny " 65%said-person1=+.(the_meaning_of_life=destiny)helper-meaning-of-life (a_pet=destiny)helper-pet (a_true_love=destiny)helper-love (a_treasure=destiny)helper-treasure (a_screwdriver=destiny)helper-goods (some_shoes=destiny)helper-goods (elixir_of_ethernal_life=destiny)helper-elixir (elixir_of_ethernal_life=destiny)helper-goods (a_friend=destiny)helper-friend (some_powerful_weapons=destiny)helper-weapons (some_food=destiny)helper-goods
+
+helper-meaning-of-life/30%in-order to-reach goal=destiny one-must meaning-of-life=+.. later-conclusion
+helper-pet/he=person1-pronoun then bought a 60%pet-descriptor pet-type.. later-conclusion
+helper-love/name-man=person-help-name was happy to hear that.. later-conclusion
+helper-treasure/ " I plan a journey to journey-destination " answered name-man=person-help-name.helper-treasure2
+helper-treasure2/ " you may join " he=person-helper-pronoun added.. later-conclusion
+helper-elixir/ " the last botle botle-ended=+ " answered name-man=person-help-name.. later-conclusion
+helper-friend/name-man=person-help-name didnt have much human-interactions 50%ever since reason-for-no-friends=+.. later-conclusion
+helper-weapons/" power cant be gaint by-means-of violence but by-means-of source-of-power " answered name-man=person-help-name.. later-conclusion
+helper-goods/name-man=person-help-name then sold to-person1=+ goal=destiny.. later-conclusion
+
+later-conclusion/later ending-happened=+.. the-end
+
+the-end/the-end.

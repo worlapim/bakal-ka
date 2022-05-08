@@ -1,0 +1,35 @@
+name-rarity/which-was a somewhat common name 50%in-that-culture
+
+house-details/that-had many house-details
+house-details/which-was located house-place=+
+
+house-place/poximity a 20%size landmark
+
+of-helper-house/of the 60%house-adjective=helper-house-adjective house=helper-house
+
+helper-greetings/, then he=person-helper-pronoun asked " what-you-want ? "
+
+said-person1/replied name-man=name
+
+by-someone/by his=person1-pronoun-owner someones
+
+to-person1/to name-man=name
+to-person1/him=person1-pronoun-target
+
+reason-for-no-friends/his=person-helper-pronoun-owner someones died=+
+reason-for-no-friends/his=person-helper-pronoun-owner someones moved-away 60%reason-move-away
+reason-for-no-friends/he=person-helper-pronoun moved here some-time-ago
+
+botle-ended/got sold some-time-ago
+botle-ended/got stolen some-time-ago
+
+meaning-of-life/find what satisfies you
+meaning-of-life/find your place amongst people
+meaning-of-life/pay me a lot
+
+said-person1/said name-man=name
+
+ending-happened/they ended-together
+ending-happened/name-man=name died=+
+
+died/died 90%die-when

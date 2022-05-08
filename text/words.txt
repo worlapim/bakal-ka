@@ -1,0 +1,300 @@
+start-time/once upon a time
+start-time/legend says, that one day
+start-time/long time ago
+start-place/in a mountain village
+start-place/in the middle of a desert
+start-place/on a distand island
+start-verb/there was
+start-verb/lived
+person-adjective/young
+person-adjective/old
+person-adjective/frendly
+person-adjective/mean
+man/man
+woman/woman
+name/name
+name-man/Filip
+name-man/Jakub
+name-man/Martin
+name-man/Mirek
+name-man/Pepa
+name-man/Roman
+name-man/David
+name-man/Karel
+name-man/Lojza
+name-man/Gregor
+name-woman/Nela
+name-woman/Martina
+name-woman/Kamila
+name-woman/Marcela
+name-woman/Petra
+name-woman/Lenka
+name-woman/Michala
+named/named
+named/called
+named/with a name
+a/a
+the/the
+he/he
+she/she
+him/him
+her/her
+his/his
+so/so
+so/therefore
+and/and
+uvod-day/one day
+uvod-day/one sunny day
+decided/decided
+decided/wanted
+decided/got an urge
+to/to
+obtain/find
+obtain/get
+obtain/obtain
+goal/the meaning of life
+goal/a pet
+goal/a true love
+goal/a treasure
+goal/a screwdriver
+goal/some shoes
+goal/an elixir of ethernal life
+goal/a friend
+goal/some powerful weapons
+goal/some food
+ask-where/"excuse me, where could I
+ask-where/"hello, do you know where to
+ask-where/"greetings, could you show me a direction on my path to
+ask-end/?"
+asked/asked
+close/nearby
+close/some random
+person/blacksmith
+person/fisherman
+person/traveler
+person/homeless person
+person/foreigner
+person/fortune-teller
+person/jester
+person/child
+person/priest
+person/oracle=an
+ignored/did not reacted in any way
+ignored/pretended to not hear anything
+know/"person who can help you is
+know/"talk to
+answer-end/."
+answered/answered
+answered/replied
+answered/said
+not-liked/did not liked
+not-liked/hated
+not-liked/was always trying to avoid
+liked/liked
+liked/was fond of
+liked/admired
+because/because
+reason-hate/was using discord with light theme
+reason-hate/used to sell souls on ebay
+reason-hate/was way more cooler
+reason-hate/never picked healer
+reason-hate/used to be knocking on peoples doors and then running away
+reason-hate/ate pizza with pineapple
+reason-hate/was often annoying people with multi level marketing offers
+reason-hate/had cooler hair
+reason-hate/used to steal money from innocent windmill owner
+reason-hate/used to hang out with that strange guy who everybody made fun of
+reason-hate/was cheating when they used to play chess together
+reason-hate/was often loudly singing something in the middle of the night
+reason-hate/was always spreading gossips
+reason-like/was helping everyone with their homeworks
+reason-like/always smellt good
+reason-like/had a beautifull garden
+reason-like/had great dance moves
+reason-like/was always buying drinks for others
+which-was/which was
+somewhat/somewhat
+somewhat/rather
+common/common
+in-that-culture/in that time
+in-that-culture/in that area
+gave-up/gave up
+give-up-ending/setteled down with two lovely children
+give-up-ending/went home crying
+give-up-ending/forgot that this ever happened
+the-end/the end
+however/however
+however/on the other hand
+was/was
+very/very
+very/rather
+simpathetic/simpathetic
+simpathetic/kind
+simpathetic/nice
+still/still
+went/went
+stood/stood
+in-front-of/in front of
+in-front-of/before
+house-adjective/old=an
+house-adjective/wooden
+house-adjective/dark
+house/house
+house/cottage
+house/shack
+that-had/that had
+that-had/which had
+that-had/which disposed with
+many/many
+many/a lot of
+much/much
+much/a lot of
+house-details/beautifull flowers in the garden
+house-details/stray cats nearby
+house-details/small windows on the front side
+located/located
+located/found
+house-place/on a small hill
+house-place/in a dark forest
+house-place/near a seashore
+house-place/next to a beatiful lake
+poximity/near
+poximity/next to
+poximity/by
+landmark/ancient tree=an
+landmark/birch forest
+size/big
+size/small
+size/huge
+size/tiny
+knocked-on/knocked on
+door/door
+stepped-closer/stepped closer
+stepped-closer/walked forward
+of/of
+opened/opened
+what-you-want/What do you seek
+what-you-want/What are you looking for
+what-you-want/Why did you come here
+what-you-want/Who are you
+"/"
+?/?
+,/,
+I-want/I am looking for
+I-want/I need you to get me
+I-want/I am in a despered need of
+I-want/I am on my journey for
+replied/replied
+replied/said
+was-told/was told
+was-told/got informed
+someones/friend
+someones/mates
+someones/mom
+someones/dad
+someones/sister
+someones/brother
+about/about
+someone/someone
+who/who
+could-help/could help
+could-help/could be useful
+by/by
+then/then
+sold/sold
+later/the next day
+later/the next year
+later/after a couple of months
+later/later that day
+later/after some time
+they/they
+ended-together/got engaged
+ended-together/went on an adventure together to a distant land
+ended-together/ended in jail
+died/died
+die-when/in a sleep
+die-when/of an unknown cause
+die-when/of starvation
+die-when/alone
+power/power
+cant/can't
+cant/can not
+cant/shall not
+cant/should not
+gaint/be gaint
+gaint/be obtained
+gaint/be achieved
+be/be
+by-means-of/by means of
+by-means-of/through
+by-means-of/thanks to
+violence/violence
+but/but
+source-of-power/friendship
+source-of-power/wisdom
+source-of-power/love
+source-of-power/unity
+didnt/didn't
+didnt/did not
+have/have
+human-interactions/human interactions
+human-interactions/company
+moved-away/moved away
+reason-move-away/due to political situations
+reason-move-away/for legal issues
+since/since
+ever/ever
+moved/moved
+here/here
+some-time-ago/a month ago
+some-time-ago/couple of weeks ago
+some-time-ago/few months ago
+last/last
+botle/botle
+botle/vial
+got/got
+sold/sold
+stolen/stolen
+I/I
+plan/plan
+journey/journey
+journey/adventure=an
+journey-destination/a distand land
+journey-destination/the sea on the north
+journey-destination/a distand desert
+journey-destination/a cavern
+added/added
+may/can
+may/may
+you/you
+join/join
+added/added
+happy/happy
+happy/delighted
+happy/glad
+happy/exited
+hear/hear
+that/that
+pet-descriptor/lovely
+pet-descriptor/young
+pet-descriptor/cute
+pet-descriptor/little
+pet-descriptor/adorable=an
+pet-type/dog
+pet-type/cat
+pet-type/snake
+bought/bought
+in-order/in order
+to-reach/to reach
+to-reach/to achieve
+one-must/one must
+one-must/one has to
+one-must/you must
+one-must/you have to
+find/find
+satisfies/satisfies
+satisfies/fulfills
+pay/pay
+me/me
+lot/lot
+what/what
