@@ -3,7 +3,7 @@ start-time/legend says, that one day
 start-time/long time ago
 start-place/in a mountain village
 start-place/in the middle of a desert
-start-place/on a distand island
+start-place/on a distant island
 start-verb/there was
 start-verb/lived
 person-adjective/young
@@ -112,6 +112,7 @@ reason-like/always smellt good
 reason-like/had a beautifull garden
 reason-like/had great dance moves
 reason-like/was always buying drinks for others
+reason-like/was known for saving a child from a burning building
 which-was/which was
 somewhat/somewhat
 somewhat/rather
@@ -298,3 +299,9 @@ pay/pay
 me/me
 lot/lot
 what/what
+good/good
+good/treasure
+was-gone/was gone
+was-gone/was nowhere to be seen
+was-gone/was just gone
+was-gone/could not be found

@@ -1,0 +1,272 @@
+﻿# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 15 23:38:40 2018
+
+@author: worlapim
+"""
+import random
+from tkinter import filedialog
+from tkinter import *
+from datetime import *
+from tkinter import messagebox
+
+speed=3
+dictionary=[]
+paterns=[]
+next_sentence=[""]
+rest_sentence=""
+pamet=[]
+smer_paterns="paterns.txt"
+smer_dictionary="words.txt"
+
+def otevrit_w():
+    global dictionary
+    global smer_dictionary
+    smer_dictionary = filedialog.askopenfilename(title=u"Otevřít soubor",filetypes=(('texty', '*.txt'),('cokoliv', '*')))
+    dictionary=[]
+    update_w()
+
+def otevrit_p():
+    global paterns
+    global smer_paterns
+    smer_paterns = filedialog.askopenfilename(title=u"Otevřít soubor",filetypes=(('texty', '*.txt'),('cokoliv', '*')))
+    paterns=[]
+    update_p()
+
+def update_w():
+    global smer_dictionary  
+    global dictionary
+    soubor=open(smer_dictionary,'r')
+    hruby=soubor.readlines()
+    soubor.close()
+    
+    for i in hruby:
+        lomeno=0
+        ok=0
+        for y in i:
+            lomeno=lomeno+1
+            if y=='/':
+                ok=1
+                break
+        if ok==1:
+            kategorie=""
+            for y in range(lomeno-1):
+                kategorie=kategorie+i[y]
+            fraze=""
+            for y in range(len(i)-lomeno-1):
+                fraze=fraze+i[y+lomeno]
+            new=1
+            spot=0
+            for y in dictionary:
+                if y[0]==kategorie:
+                    new=0
+                    break
+                spot=spot+1
+            if new==1:
+                dictionary.append([kategorie,[fraze]])
+            else:
+                dictionary[spot][1].append(fraze)
+
+def update_p():
+    global paterns
+    global smer_paterns
+    global next_sentence
+    soubor=open(smer_paterns,'r')
+    hruby=soubor.readlines()
+    soubor.close()
+    next_sentence=[""]
+    y=-2
+    for i in range(len(hruby[0])):
+        if hruby[0][i]==" ":
+            for y in range(2+y,i):
+                next_sentence[len(next_sentence)-1]=next_sentence[len(next_sentence)-1]+hruby[0][y]
+            next_sentence.append("")
+    for y in range(2+y,i):
+        next_sentence[len(next_sentence)-1]=next_sentence[len(next_sentence)-1]+hruby[0][y]
+    pocet_modelu=0
+    for veta in hruby:
+        if veta==hruby[0]:
+            continue
+        paterns.append([])
+        for i in range(len(veta)-1):
+            if veta[i]=='/':
+                break
+        paterns[pocet_modelu].append("")
+        for y in range(i):
+            paterns[pocet_modelu][0]=paterns[pocet_modelu][0]+veta[y]
+        for i in range(i,len(veta)-1):
+            if veta[i]==" " or veta[i]==".":
+                kus=""
+                for y in range(y+2,(i)):
+                    kus=kus+veta[y]
+                procenta=0
+                promenna=0
+                for q in kus:
+                    if q=="%":
+                        procenta=1
+                    elif q=="=":
+                        promenna=1
+                paterns[pocet_modelu].append([])
+                if procenta==1:
+                    for q in range(len(kus)):
+                        if kus[q]=='%':
+                            break
+                    cislo=""
+                    for q in range(q):
+                        cislo=cislo+kus[q]
+                    paterns[pocet_modelu][len(paterns[pocet_modelu])-1].append(int(cislo))
+                else:
+                    paterns[pocet_modelu][len(paterns[pocet_modelu])-1].append(100)
+                fraze=""
+                uloz=""
+                if promenna==0:
+                    if procenta==1:
+                        for q in range(len(kus)):
+                            if kus[q]=='%':
+                                break
+                        for q in range(q+1,len(kus)):
+                            fraze=fraze+kus[q]
+                    else:
+                        for q in range(len(kus)):
+                            fraze=fraze+kus[q]
+                else:
+                    od=0
+                    do=0
+                    if procenta==1:
+                        for od in range(len(kus)):
+                            if kus[od]=='%':
+                                break
+                        od=od+1
+                    for do in range(len(kus)):
+                        if kus[do]=='=':
+                            break
+                    for q in range(od,do):
+                        fraze=fraze+kus[q]
+                    for q in range(do+1,len(kus)):
+                        uloz=uloz+kus[q]
+                paterns[pocet_modelu][len(paterns[pocet_modelu])-1].append(fraze)
+                paterns[pocet_modelu][len(paterns[pocet_modelu])-1].append(uloz)
+            if veta[i]==".":
+                break
+        paterns[pocet_modelu].append([])
+        konec=""
+        for i in range(i+1,len(veta)-1):
+            if veta[i]==" ":
+               paterns[pocet_modelu][len(paterns[pocet_modelu])-1].append(konec)
+               konec=""
+            else:
+                konec=konec+veta[i]
+        paterns[pocet_modelu][len(paterns[pocet_modelu])-1].append(konec)
+        
+        pocet_modelu=pocet_modelu+1
+        
+
+def vyber(moznosti):
+    return(moznosti[random.randint(0,len(moznosti)-1)])
+    
+def chance(proc):
+    a=random.randint(1,100)
+    if a<=proc:
+        return (1)
+    else:
+        return (0)
+
+def pis():
+    global text
+    global next_sentence
+    global rest_sentence
+    global paterns
+    global dictionary    
+    global pamet
+    if rest_sentence=="":
+        plan=""        
+        model=vyber(next_sentence)
+        for i in paterns:
+            if i[0]==model:
+                plan=i
+                break
+        if plan=="":
+            rest_sentence="ERROR "
+        else:
+            next_sentence=plan[len(plan)-1]
+            for i in range(1,len(plan)-1):
+                if plan[i][2]=="":
+                    for y in dictionary:
+                        if plan[i][1]==y[0]:
+                            if chance(plan[i][0])==1:
+                                rest_sentence=rest_sentence+" "+vyber(y[1])
+                else:
+                    nalezeno=0                    
+                    for y in pamet:
+                        if plan[i][2]==y[0]:
+                            nalezeno=1
+                            if chance(plan[i][0])==1:
+                                rest_sentence=rest_sentence+" "+y[1]
+                                break
+                    if nalezeno==0:
+                        for y in dictionary:
+                            if plan[i][1]==y[0]:
+                                to=vyber(y[1])
+                                if chance(plan[i][0])==1:
+                                    rest_sentence=rest_sentence+" "+to
+                                pamet.append([plan[i][2],to])
+                        
+            rest_sentence=rest_sentence+"." 
+    
+    if speed==1:
+        text.insert(END, rest_sentence[0])
+        a=rest_sentence
+        rest_sentence=""        
+        for i in range(1,len(a)):
+            rest_sentence=rest_sentence+a[i]
+    if speed==3:
+        text.insert(END, rest_sentence)
+        rest_sentence=""
+    
+def speed1():
+    global speed
+    speed=1
+
+def speed2():
+    global speed
+    speed=2
+
+def speed3():
+    global speed
+    speed=3
+
+
+update_p()
+update_w()
+    
+"""
+vzhled
+"""
+       
+    
+hlavni=Tk()
+
+
+speedMenu=Menu(hlavni,tearoff=0)
+speedMenu.add_command(label="1",command=speed1)
+speedMenu.add_command(label="2",command=speed2)
+speedMenu.add_command(label="3",command=speed3)
+
+sourceMenu=Menu(hlavni,tearoff=0)
+sourceMenu.add_command(label="words",command=otevrit_w)
+sourceMenu.add_command(label="paterns",command=otevrit_p)
+
+HorniMenu=Menu(hlavni,tearoff=0)
+HorniMenu.add_cascade(label="source",menu=sourceMenu)
+HorniMenu.add_cascade(label="speed",menu=speedMenu)
+hlavni.config(menu=HorniMenu)
+
+
+b = Button(hlavni, text="GENERATE!", width=14, font="Arial 16 bold", command=pis)
+b.grid(row=1,column=0)
+
+text=Text()
+text.grid(row=0,column=0)
+
+
+mainloop()  

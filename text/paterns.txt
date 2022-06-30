@@ -27,8 +27,9 @@ helper-treasure2/ " you may join " he=person-helper-pronoun added.. later-conclu
 helper-elixir/ " the last botle botle-ended=+ " answered name-man=person-help-name.. later-conclusion
 helper-friend/name-man=person-help-name didnt have much human-interactions 50%ever since reason-for-no-friends=+.. later-conclusion
 helper-weapons/" power cant be gaint by-means-of violence but by-means-of source-of-power " answered name-man=person-help-name.. later-conclusion
-helper-goods/name-man=person-help-name then sold to-person1=+ goal=destiny.. later-conclusion
+helper-goods/name-man=person-help-name then sold to-person1=+ goal=destiny.. later-conclusion later-stolen
 
 later-conclusion/later ending-happened=+.. the-end
+later-stolen/when name-man=name got home his=person1-pronoun-owner good was-gone.. the-end
 
 the-end/the-end.
